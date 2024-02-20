@@ -1,0 +1,11 @@
+<header class="header">
+    <a routerLink="#" class="logo">HCK</a>
+    <i [ngClass]='condition ? "bx bx-menu":"bx bx-x"' id="menu-icon" (click)="onClick()"></i>
+    <nav class="navbar" (click)="onClick()" [class.active]="show">
+        <a routerLink="home" (click)="gotoTop()" (click)="onHide()" routerLinkActive="active">Home</a>
+        <a routerLink="about" (click)="onShow()" routerLinkActive="active">About</a>
+        <a routerLink="service" (click)="onShow()" routerLinkActive="active">Service</a>
+        <a routerLink="portfolio" (click)="onShow()" routerLinkActive="active">Portfolio</a>
+        <a routerLink="contact" (click)="onShow()" routerLinkActive="active">Contact</a>
+    </nav>
+</header>

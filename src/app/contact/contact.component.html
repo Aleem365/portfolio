@@ -1,0 +1,16 @@
+<section class="contact" id="contact">
+    <h2 class="heading">Contact <span>Me!</span></h2>
+    <form action="#" [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+        <div class="input-box">
+            <input type="text" formControlName="full_name" class="form-control" placeholder="Full Name">
+            <input type="eamil" formControlName="eamil" class="form-control" placeholder="Email Address">
+        </div>
+        <div class="input-box">
+            <input type="number" formControlName="mobile_number" class="form-control" placeholder="Mobile Number">
+            <input type="text" formControlName="subject" class="form-control" placeholder="Email Subject">
+        </div>
+        <textarea name="" id="" cols="30" rows="10" formControlName="discription" class="form-control"
+            placeholder="Your Message"></textarea>
+        <input type="submit" value="Send Message" class="btn">
+    </form>
+</section>
